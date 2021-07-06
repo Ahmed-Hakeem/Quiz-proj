@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type = "text/css" rel="stylesheet" href="./quiz.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="top">
+      <ion-icon id="icon" name="menu-outline"></ion-icon>
+      <span class="badge">0</span>
+    </div>
+    <div id="menu">
+      <div class="options" id="favourites">favorites</div>
+      <div id="box1">
+        <ul id="favoriteItems">
+          
+        </ul>
+      </div>
+      <div class="options" id="Account">Account</div>
+      <div id="box2">
+        <ul id="accountItems">
+         
+        </ul>
+      </div>
+    </div>
+    <div class="quizzes" id="quiz">
+      <div class="questions" id="question0">
+        <div class= "question">what is the meaning of Life?</div>
+        <div  class= "answersContainer" >
+          <label id="ans0" class="answers">
+            <span class="answersContent">Two  adsd asd  sad adsdasd </span>
+            <input id="answer0" class= "checkbox" type="checkbox" >
+            
+          </label>
+          <label id="ans1" class="answers">
+            <span class="answersContent">Two  adsd asd  sad adsdasd </span>
+            <input id="answer1" class= "checkbox" type="checkbox" >
+            
+          </label>
+          <label id="ans2" class="answers">
+            <span class="answersContent">Two  adsd asd  sad adsdasd </span>
+            <input id="answer2" class= "checkbox" type="checkbox" >
+            
+          </label>
+        </div>
+      </div>
+      <div class="NextPrevIcons">
+      <button class="nextPrevButtons"><i src="" id="prev">prev</i></button>
+      <span class="prevNextSpans" id="currentQuestionIndex"></span>
+      <span class="prevNextSpans" id="nOfQuestions"></span>
+      <button class="nextPrevButtons"><i src="" id="next">next</i></button>
+      </div>
+    </div>
+    <img id="favor" src="../images/star.png">
+    <p id= "warning">warning : your answers will not be counted until you press next or prev</p>
+    <button id= "submit">Submit</button>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="../data/users.js"></script>
+    <script src="./quiz.js"></script>
+    <!-- sayed -->
+    <script src="./script.js"></script>
+  </body>
+</html>

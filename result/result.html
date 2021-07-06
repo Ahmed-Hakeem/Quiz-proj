@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      height: 100%;
+
+      /* background-color: darkgoldenrod; */
+    }
+
+    #emoj {
+      /* border: 2px solid black; */
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      top: 50px;
+      height: 40vh;
+    }
+
+    img {
+      /* width: 100%; */
+      height: 100%;
+    }
+
+    #result1 {
+      /* border: 2px solid black; */
+      width: 50%;
+      text-align: center;
+      padding: 15px;
+      margin: auto;
+      position: relative;
+      top: 100px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-weight: bolder;
+      color: white;
+      font-size: larger;
+    }
+    #answersCheck {
+      position: absolute;
+      bottom: 25%;
+      left: 47%;
+      color: white;
+    }
+    #answersCheck li {
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="title"></div>
+    <div id="emoj"><img id="image" src="" alt="" /></div>
+    <div id="result1">Your Score <span id="result">..</span></div>
+    <ul id="answersCheck"></ul>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

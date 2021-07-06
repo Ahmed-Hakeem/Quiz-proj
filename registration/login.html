@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ecedf1;
+        height: 100vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      #studentLogin,
+      #teacherLogin {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 20%;
+        height: 300px;
+        font-size:  ;
+        /* margin-left : 5% ;
+            margin-top : 10%; */
+        border: 1px solid #ccc;
+        padding: 4%;
+        padding-top: 2%;
+        border-radius: 5px 5px 0 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        overflow: auto;
+      }
+
+      input,
+      select {
+        display: block;
+        width: 90%;
+        height: 16%;
+        margin-bottom: 30px;
+        /* text-align : center; */
+        text-indent: 10px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid white;
+        background-color: #3c404313;
+      }
+      .containers {
+        display: flex;
+        width: 80%;
+        /* justify-content: space-between; */
+        height: 12%;
+        margin-left : 15%
+      }
+      .buttons {
+        width: 100px;
+        /* margin-left:20px; */
+        height: 30px;
+        border: 1px solid white;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px 5px ;
+        /* padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 13%;
+        padding-bottom: 8%; */
+      }
+      .logIn {
+        background-color: rgba(255, 0, 0, 0.424);
+        color: white;
+      }
+      .logIn:hover {
+        background-color: rgba(255, 0, 0, 0.726);
+      }
+      .signUp {
+        background-color: #8aaf9daf;
+      }
+      .signUp:hover {
+        background-color: #8aaf9d;
+      }
+      span {
+        margin-right: 80%;
+        margin-top: 4%;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(39, 40, 44)
+      }
+
+      #changeTypeBtn {
+        display: block;
+        position: fixed;
+        bottom: 4%;
+        left: 45%;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(189, 18, 18);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* login page */
+      #studentLogin{
+          display: flex;
+            justify-content: center;
+            flex-flow : row wrap ; 
+            width: 30% ;
+            height: 600px ;
+           
+            border : 1px solid #ccc ;
+            padding : 4%;
+            padding-top: 2%;
+            border-radius: 5px 5px 0 0;
+            background-color: rgba(0,0,0,.3);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            background-color :white;
+            overflow: auto;
+        }
+        #studentLogin,
+        #teacherLogin {
+          display: none;
+        }
+        /* #container3 {
+      }*/
+
+      #container2 button{
+        width: 40% ;
+            height:80%  ;
+            border  :1px solid white;
+            color: white;
+            font-weight: 600;
+            font-size:15px;
+            cursor: pointer;
+            text-align: center;
+            padding-left:13%;
+            padding-right: 13%;
+            padding-top : 5%;
+            padding-bottom : 5%;
+      }
+      #studentLogin input{
+          height : 9%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="studentLogin">
+        <span id = "nameSpan">userName :</span>
+        <input type = "text" placeholder="enter userName" id="currentUserName" name="name" ></input>
+        <span >password :</span>
+        <input type = "password" placeholder="enter password"  id="currentPassword" name="password"  ></input>
+        <span >Quiz password :</span>
+        <input type = "password" placeholder="enter password"  id="QuizPassWord" name="password"  ></input>
+        <span id = "idSpan">Quiz id :</span>
+        <input type = "text" placeholder="enter Quiz id" id="quizId" name="quizId" ></input>
+        <span >teacher name :</span>
+        <input type = "text" placeholder="enter teacher name"  id="currentTeacherName" name="currentTeacherName"  ></input>
+      <div id="container2" class="containers">
+        <button type="submit" class="buttons signUp" id="signUp2">
+          SignUp
+        </button>
+        <button class="buttons logIn" id="logIn2">LogIn</button>
+      </div>
+    </div>
+    <div id="teacherLogin">
+        <span id = "nameSpan">userName :</span>
+        <input type = "text" placeholder="enter userName" id="currentUserName1" name="name" ></input>
+        <span >password :</span>
+        <input type = "password" placeholder="enter password"  id="currentPassword1" name="password" ></input>
+        <div id="container3" class="containers">
+            <button type="submit" class="buttons signUp" id="signUp2">
+              SignUp
+            </button>
+            <button class="buttons logIn" id="logIn2">LogIn</button>
+          </div>
+    </div>
+
+    <button id="changeTypeBtn">change Type</button>
+
+    <script src="../data/users.js"></script>
+    <script src="./login.js"></script>
+  </body>
+</html>
